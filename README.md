@@ -1,5 +1,11 @@
 # Hash-Collisions
-
+# Application start
+  1. clone the project;
+  2. cd Hash-Collisions
+  3. execute: mvn spring-boot:run
+  4. make post request using Http client like curl
+  for exemple: curl -X POST -H 'Content-Type:application/json' -d '{"inList" : [ "Bob", "boj", "obb", "job", "BOB", "foo" ]}' http://localhost:8080
+  
 Goal:
 Write an HTTP service which accepts an array of strings and returns the sets of strings which collide in the hash table in the order they appeared in the input list.
 
