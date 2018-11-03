@@ -39,7 +39,7 @@ public class CollisionService {
      * @param words - list of words
      * @return list of collisions
      */
-    private static List<String> findWordCollisions(String inWord, List<String> words) {
+    private List<String> findWordCollisions(String inWord, List<String> words) {
         // get lower-cased letters
         String lowerWord = inWord.toLowerCase();
         int length = inWord.length();
